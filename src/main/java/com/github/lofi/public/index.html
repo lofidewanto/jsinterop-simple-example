@@ -1,11 +1,18 @@
+<!doctype html>
 <html>
 <head>
    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
    <title>Demo GWT Webapp</title>
-   <script type="text/javascript" language="javascript" 
-      src="basic.nocache.js" async=""></script>
+   <script type="text/javascript" language="javascript" src="basic.nocache.js"/>
+
+   <script type="text/javascript" language="javascript">
+      var calculator = new Calculator();
+      sum = calculator.calculateSum(10);
+      console.log('Result: ' + sum);
+   </script>
 </head>
 <body>
    <div id="helloButton"/>
+   <button onclick="console.log(new Calculator().calculateSum(10));">Click my Apple!</button>
 </body>
 </html>
