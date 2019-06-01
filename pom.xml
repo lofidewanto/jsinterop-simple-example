@@ -1,6 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<!-- Using gwt-boot-starter-parent -->
@@ -9,25 +7,26 @@
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath />
 	</parent>
-
+	
 	<groupId>com.github.gwt.jsinterop.example</groupId>
 	<artifactId>jsinterop-simple-example</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>jsinterop-simple-example</name>
 	<url>http://maven.apache.org</url>
-
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+	
 	<dependencies>
 		<!-- GWT Starter Core - Basic -->
 		<dependency>
 			<groupId>com.github.gwtboot</groupId>
 			<artifactId>gwt-boot-starter</artifactId>
 		</dependency>
-
+		
+		<!-- Unit Test with Mockito and JUnit -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
@@ -41,7 +40,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	
 	<build>
 		<plugins>
 			<!-- GWT Maven Plugin -->
@@ -79,7 +78,7 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	
 	<repositories>
 		<repository>
 			<id>sonatype-snapshots</id>
