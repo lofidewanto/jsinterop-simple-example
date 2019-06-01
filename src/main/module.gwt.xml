@@ -1,0 +1,4 @@
+<module rename-to="basic">
+	<inherits name="com.github.gwtboot.starter.Starter" />
+	<entry-point class='com.github.lofi.client.AppEntryPoint' />
+</module>
