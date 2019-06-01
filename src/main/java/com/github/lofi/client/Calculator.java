@@ -8,17 +8,22 @@ import jsinterop.annotations.JsType;
 
 @JsType(namespace = JsPackage.GLOBAL, name = "Calculator")
 public class Calculator {
-	
-	private static Logger logger = Logger
-			.getLogger(Calculator.class.getName());
+
+	private static Logger logger = Logger.getLogger(Calculator.class.getName());
 
 	public Calculator() {
 		logger.info("Calculator...");
 	}
 
 	public int calculateSum(List<Integer> values) {
-		int sum = values.stream().mapToInt(Integer::intValue).sum();
-		return sum;
+		if (values != null) {
+			logger.info("Values: " + values.size());
+			int sum = values.stream().mapToInt(Integer::intValue).sum();
+			return sum;
+		} else {
+			logger.info("Values: null");
+			return 0;
+		}
 	}
 
 }
