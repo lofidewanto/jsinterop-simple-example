@@ -3,9 +3,10 @@ package com.github.lofi.client;
 import java.util.List;
 import java.util.logging.Logger;
 
+import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsType;
 
-@JsType(namespace = "Calculator")
+@JsType(namespace = JsPackage.GLOBAL, name = "Calculator")
 public class Calculator {
 	
 	private static Logger logger = Logger

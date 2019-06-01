@@ -6,5 +6,6 @@ public class AppEntryPoint implements EntryPoint {
 
 	@Override
 	public void onModuleLoad() {
+		// Do nothing, just to load the Java classes
 	}
 }
