@@ -5,6 +5,8 @@ This example uses GWT Boot as Starter Parent: https://github.com/gwtboot/gwt-boo
 
 Take a look at this article to see the whole story: ...
 
+Our current build status: [![Build Status](https://travis-ci.org/lofidewanto/jsinterop-simple-example.svg?branch=master)](https://travis-ci.org/lofidewanto/jsinterop-simple-example)
+
 To build the example:
 ```
 mvn clean package
