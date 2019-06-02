@@ -1,5 +1,6 @@
 package com.github.lofi.client;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -15,10 +16,11 @@ public class Calculator {
 		logger.info("Calculator...");
 	}
 
-	public int calculateSum(List<Integer> values) {
+	public int calculateSum(Integer[] values) {
+		List<Integer> integers = Arrays.asList(values);
 		if (values != null) {
-			logger.info("Values: " + values.size());
-			int sum = values.stream().mapToInt(Integer::intValue).sum();
+			logger.info("Values: " + integers.size());
+			int sum = integers.stream().mapToInt(Integer::intValue).sum();
 			return sum;
 		} else {
 			logger.info("Values: null");

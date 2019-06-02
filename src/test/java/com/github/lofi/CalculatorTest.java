@@ -3,8 +3,6 @@ package com.github.lofi;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Logger;
 
 import com.github.lofi.client.Calculator;
@@ -25,9 +23,7 @@ public class CalculatorTest {
 	public void calculateSum() {
 		assertNotNull(calculator);
 
-		List<Integer> values = new ArrayList<>();
-		values.add(12);
-		values.add(14);
+		Integer[] values = { 12, 14 };
 
 		int result = calculator.calculateSum(values);
 		assertEquals(26, result);
@@ -39,7 +35,7 @@ public class CalculatorTest {
 	public void calculateSum_With_Null() {
 		assertNotNull(calculator);
 
-		List<Integer> values = null;
+		Integer[] values = {};
 
 		int result = calculator.calculateSum(values);
 		assertEquals(0, result);
