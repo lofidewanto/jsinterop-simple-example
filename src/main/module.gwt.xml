@@ -1,4 +1,4 @@
-<module rename-to="basic">
+<module rename-to="calculator">
 	<inherits name="com.github.gwtboot.starter.Starter" />
 	<entry-point class='com.github.lofi.client.AppEntryPoint' />
 </module>

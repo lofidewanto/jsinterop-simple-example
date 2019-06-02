@@ -49,10 +49,10 @@
 				<artifactId>gwt-maven-plugin</artifactId>
 				<configuration>
 					<moduleName>
-						com.github.lofi.Basic
+						com.github.lofi.Calculator
 					</moduleName>
 					<startupUrls>
-						<url>/basic/</url>
+						<url>/calculator/</url>
 					</startupUrls>
 					<compilerArgs>
 						<arg>-generateJsInteropExports</arg>

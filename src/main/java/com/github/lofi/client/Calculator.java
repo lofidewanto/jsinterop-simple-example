@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsType;
 
-@JsType(namespace = JsPackage.GLOBAL, name = "Calculator")
+@JsType(namespace = JsPackage.GLOBAL)
 public class Calculator {
 
 	private static Logger logger = Logger.getLogger(Calculator.class.getName());
