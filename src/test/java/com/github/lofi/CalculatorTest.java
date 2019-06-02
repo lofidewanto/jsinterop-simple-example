@@ -23,10 +23,10 @@ public class CalculatorTest {
 	public void calculateSum() {
 		assertNotNull(calculator);
 
-		Integer[] values = { 12, 14 };
+		Double[] values = { 12.0, 14.0 };
 
-		int result = calculator.calculateSum(values);
-		assertEquals(26, result);
+		double result = calculator.calculateSum(values);
+		assertEquals(26.0, result);
 
 		logger.info("Result: " + result);
 	}
@@ -35,10 +35,10 @@ public class CalculatorTest {
 	public void calculateSum_With_Null() {
 		assertNotNull(calculator);
 
-		Integer[] values = {};
+		Double[] values = {};
 
-		int result = calculator.calculateSum(values);
-		assertEquals(0, result);
+		double result = calculator.calculateSum(values);
+		assertEquals(0.0, result);
 
 		logger.info("Result: " + result);
 	}

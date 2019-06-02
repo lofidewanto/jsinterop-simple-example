@@ -16,15 +16,15 @@ public class Calculator {
 		logger.info("Calculator...");
 	}
 
-	public int calculateSum(Integer[] values) {
-		List<Integer> integers = Arrays.asList(values);
+	public double calculateSum(Double[] values) {
+		List<Double> integers = Arrays.asList(values);
 		if (values != null) {
 			logger.info("Values: " + integers.size());
-			int sum = integers.stream().mapToInt(Integer::intValue).sum();
+			Double sum = integers.stream().mapToDouble(Double::doubleValue).sum();
 			return sum;
 		} else {
 			logger.info("Values: null");
-			return 0;
+			return 0.0;
 		}
 	}
 
