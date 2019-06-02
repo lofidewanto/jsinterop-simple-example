@@ -17,10 +17,10 @@ public class Calculator {
 	}
 
 	public double calculateSum(Double[] values) {
-		List<Double> integers = Arrays.asList(values);
+		List<Double> doubles = Arrays.asList(values);
 		if (values != null) {
-			logger.info("Values: " + integers.size());
-			Double sum = integers.stream().mapToDouble(Double::doubleValue).sum();
+			logger.info("Values size: " + doubles.size());
+			Double sum = doubles.stream().mapToDouble(Double::doubleValue).sum();
 			return sum;
 		} else {
 			logger.info("Values: null");
