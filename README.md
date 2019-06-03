@@ -3,7 +3,7 @@
 
 This example uses GWT Boot as Starter Parent: https://github.com/gwtboot/gwt-boot-samples
 
-Take a look at this article to see the whole story: ...
+Take a look at this article to see the whole story: http://bit.ly/WebJavaStory
 
 [![Build Status](https://travis-ci.org/lofidewanto/jsinterop-simple-example.svg?branch=master)](https://travis-ci.org/lofidewanto/jsinterop-simple-example)
 
