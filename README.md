@@ -21,3 +21,4 @@ mvn gwt:generate-module gwt:devmode
 ```
 http://127.0.0.1:8888/calculator/
 ```
+3. GWT Dev Mode supports __automatic transpiling__. You just need to update your Java code in your IDE and reload your web browser. Your Java code will be automatically transpiled and your webapp stays uptodate without restarting the web server. If you change the **index.html** you need to push the **restart button** on the Swing GUI.
