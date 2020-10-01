@@ -17,8 +17,8 @@ public class Calculator {
 	}
 
 	public double calculateSum(Double[] values) {
-		List<Double> doubles = Arrays.asList(values);
 		if (values != null) {
+			List<Double> doubles = Arrays.asList(values);
 			logger.info("Values size: " + doubles.size());
 			Double sum = doubles.stream().mapToDouble(Double::doubleValue).sum();
 			return sum;

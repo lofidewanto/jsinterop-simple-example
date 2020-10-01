@@ -32,10 +32,22 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void calculateSum_With_Null() {
+	public void calculateSum_With_Empty() {
 		assertNotNull(calculator);
 
 		Double[] values = {};
+
+		double result = calculator.calculateSum(values);
+		assertEquals(0.0, result);
+
+		logger.info("Result: " + result);
+	}
+	
+	@Test
+	public void calculateSum_With_Null() {
+		assertNotNull(calculator);
+
+		Double[] values = null;
 
 		double result = calculator.calculateSum(values);
 		assertEquals(0.0, result);
